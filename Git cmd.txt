@@ -1,7 +1,12 @@
+Questions
+https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+
+
+
 http link
 https://github.com/nayaksoumya56/LearnPython.git
 
-…or create a new repository on the command line
+or create a new repository on the command line
 echo "# LearnPython" >> README.md
 git init
 git add README.md
@@ -9,6 +14,6 @@ git commit -m "first commit"
 git remote add origin https://github.com/nayaksoumya56/LearnPython.git
 git push -u origin master
 
-…or push an existing repository from the command line
+or push an existing repository from the command line
 git remote add origin https://github.com/nayaksoumya56/LearnPython.git
 git push -u origin master
