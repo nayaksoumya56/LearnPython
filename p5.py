@@ -5,3 +5,16 @@
 
 # Hints:
 # Use __init__ method to construct some parameters
+class myclass:
+    s=None
+    def __init__ (self):
+        self.s="default string"
+
+    def getString(self):
+        self.s=input("Enter a string : ")
+    def printString(self):
+        print(self.s.upper())
+
+obj = myclass()
+obj.getString()
+obj.printString()
