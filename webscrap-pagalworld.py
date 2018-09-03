@@ -69,8 +69,8 @@ for songfile in songlinks:
 
 ch=int(input("Select a file to download : "))
 if(ch==0 or ch==1):
-    dir= input("Enter Directory : ")
-    with open(str(dir)+str(ziplinks[ch]["title"])+".zip",'wb') as f:
+    location= input("Enter Directory : ")
+    with open(location+"\\"+str(ziplinks[ch]["title"])+".zip",'wb') as f:
         obj = requests.get(ziplinks[ch]["href"])
         f.write(obj.content)
 else:
@@ -80,8 +80,7 @@ else:
     for c,link in enumerate(songdllinks):
         print(c,link.find("span").text,sep="\t")
     ch=int(input("Choose a file : "))
-    dir= input("Enter Direcotory : ")
-    with open(str(dir)+str(songdllinks[ch]["title"])+".mp3",'wb') as f:
+    location= input("Enter Direcotory : ")
+    with open(location+"\\"+str(songdllinks[ch]["title"])+".mp3",'wb') as f:
         obj = requests.get(songdllinks[ch]["href"])
         f.write(obj.content)
-
