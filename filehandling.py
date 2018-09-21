@@ -1,0 +1,8 @@
+file=open("Sources.txt",'r')
+content=file.read()
+# print(type(content.split()))
+# print(''.join(content.split()))
+print(content)
+c2=file.read()
+print("-------------------------------------------------------------------------")
+print(c2)
